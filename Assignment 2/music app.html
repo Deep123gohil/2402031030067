@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans p-4">
+    <div class="max-w-sm mx-auto">
+        <h1 class="text-2xl font-bold">Good evening</h1>
+        
+        <div class="grid grid-cols-2 gap-2 my-4">
+            <button class="bg-gray-800 p-3 rounded-lg">rock now</button>
+            <button class="bg-gray-800 p-3 rounded-lg">oldies</button>
+            <button class="bg-gray-800 p-3 rounded-lg">some grunge</button>
+            <button class="bg-gray-800 p-3 rounded-lg">!!</button>
+            <button class="bg-gray-800 p-3 rounded-lg">butterflies</button>
+            <button class="bg-gray-800 p-3 rounded-lg">STUDY</button>
+        </div>
+        
+        <h2 class="text-xl font-bold">Recently Played</h2>
+        <div class="grid grid-cols-3 gap-2 my-2">
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+        </div>
+        
+        <h2 class="text-xl font-bold">Your top mixes</h2>
+        <div class="grid grid-cols-3 gap-2 my-2">
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+            <div class="bg-gray-700 h-24 rounded-lg"></div>
+        </div>
+        
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <button class="text-xl">⬅</button>
+            <h1 class="text-xl font-bold">Summie Jackson</h1>
+            <button class="text-green-400">✎</button>
+        </div>
+        
+        <!-- Profile Info -->
+        <div class="text-center my-4">
+            <img src="https://via.placeholder.com/80" class="rounded-full mx-auto" alt="Profile Picture">
+            <button class="bg-green-500 text-white px-4 py-1 rounded-full mt-2">Follow</button>
+        </div>
+        
+        <div class="flex justify-around border-b border-gray-700 pb-4">
+            <div><span class="font-bold">17</span><br>Posts</div>
+            <div><span class="font-bold">45</span><br>Followers</div>
+            <div><span class="font-bold">100</span><br>Following</div>
+        </div>
+        
+        <!-- Tabs -->
+        <div class="flex justify-around mt-4">
+            <button class="border-b-2 border-white pb-1">Posts</button>
+            <button class="text-gray-500">Favorites</button>
+            <button class="text-gray-500">Likes</button>
+        </div>
+        
+        <!-- Posts -->
+        <div class="my-4">
+            <div class="flex items-start space-x-3 mb-4">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="Profile Picture">
+                <div>
+                    <p class="text-sm text-gray-400">1h ago</p>
+                    <p>I am the biggest Kurt Cobain fan but this will do <span class="text-blue-400">@lela</span> sent me this song. grunge! nostalgia</p>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Art">
+                        <div>
+                            <p class="text-sm">1979</p>
+                            <p class="text-gray-400 text-xs">Smashing Pumpkins - Sob Train</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="Profile Picture">
+                <div>
+                    <p class="text-sm text-gray-400">5d ago</p>
+                    <p>This one gets me through the last semester of senior year :(</p>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Art">
+                        <div>
+                            <p class="text-sm">Loving is Easy</p>
+                            <p class="text-gray-400 text-xs">Rex Orange County - Loving is Easy</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3 text-gray-400 mt-2 text-sm">
+                        <span>❤️ 15</span>
+                        <span>💬 7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <button class="text-xl">⬅</button>
+            <h1 class="text-xl font-bold">Favorite Artists</h1>
+            <button class="text-green-400">Save</button>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="my-4">
+            <input type="text" placeholder="Search" class="w-full p-2 rounded bg-gray-700 text-white">
+        </div>
+        
+        <h2 class="text-lg font-bold mb-2">Current Favorite Artists</h2>
+        
+        <!-- Artist List -->
+        <div class="space-y-4">
+            <div class="flex items-center justify-between bg-gray-800 p-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-400">☰</span>
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist Image">
+                    <div>
+                        <p class="font-bold">Dominic Fike</p>
+                        <p class="text-gray-400 text-sm">Kiss of Venus<br>3 Nights<br>Phone Numbers</p>
+                    </div>
+                </div>
+                <button class="text-green-400">Change</button>
+            </div>
+            
+            <div class="flex items-center justify-between bg-gray-800 p-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-400">☰</span>
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist Image">
+                    <div>
+                        <p class="font-bold">Saib</p>
+                        <p class="text-gray-400 text-sm">Archipelago<br>Casino<br>Sakura Trees</p>
+                    </div>
+                </div>
+                <button class="text-green-400">Change</button>
+            </div>
+            
+            <div class="flex items-center justify-between bg-gray-800 p-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-400">☰</span>
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist Image">
+                    <div>
+                        <p class="font-bold">lovelytheband</p>
+                        <p class="text-gray-400 text-sm">coachella<br>broken<br>emotion</p>
+                    </div>
+                </div>
+                <button class="text-green-400">Change</button>
+            </div>
+            
+            <div class="flex items-center justify-between bg-gray-800 p-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-400">☰</span>
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist Image">
+                    <div>
+                        <p class="font-bold">John Mayer</p>
+                        <p class="text-gray-400 text-sm">New Light<br>Last Train Home<br>Wild Blue</p>
+                    </div>
+                </div>
+                <button class="text-green-400">Change</button>
+            </div>
+            
+            <div class="flex items-center justify-between bg-gray-800 p-2 rounded-lg">
+                <div class="flex items-center space-x-3">
+                    <span class="text-gray-400">☰</span>
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist Image">
+                    <div>
+                        <p class="font-bold">Kendrick Lamar</p>
+                        <p class="text-gray-400 text-sm">Humble.<br>LOVE. FEAT. ZACARI.<br>King Kunta</p>
+                    </div>
+                </div>
+                <button class="text-green-400">Change</button>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg font-bold">Your feed</h1>
+            <h1 class="text-lg font-bold border-b-2 border-green-400">Activity</h1>
+            <button class="text-green-400 text-xl">+</button>
+        </div>
+        
+        <!-- Activity Feed -->
+        <div class="mt-4 space-y-4">
+            <div class="flex items-center space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">bribri</p>
+                    <p class="text-sm text-gray-400">Loving is Easy<br>Rex Orange County</p>
+                </div>
+                <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Nina Stack</p>
+                    <p class="text-sm text-gray-400">Loving is Easy<br>Rex Orange County</p>
+                </div>
+                <span class="text-gray-500 text-sm">2min ago</span>
+                <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Summie Jackson</p>
+                    <p class="text-sm text-gray-400">Loving is Easy<br>Rex Orange County</p>
+                </div>
+                <span class="text-gray-500 text-sm">15min ago</span>
+                <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">angivenchy</p>
+                    <p class="text-sm text-gray-400">Loving is Easy<br>Rex Orange County</p>
+                </div>
+                <span class="text-gray-500 text-sm">2hr ago</span>
+                <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg font-bold border-b-2 border-green-400">Your feed</h1>
+            <h1 class="text-lg font-bold">Activity</h1>
+            <button class="text-green-400 text-xl">+</button>
+        </div>
+        
+        <!-- Feed -->
+        <div class="mt-4 space-y-4">
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">bribri <span class="text-gray-500 text-sm">10m ago</span></p>
+                    <p class="text-sm text-gray-400">stressed</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+                        <div>
+                            <p class="font-bold">What Could Possibly Go Wrong</p>
+                            <p class="text-gray-400 text-sm">Dominic Fike</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Nina Stack <span class="text-gray-500 text-sm">42m ago</span></p>
+                    <p class="text-sm text-gray-400">i love this :)</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Playlist Cover">
+                        <div>
+                            <p class="font-bold">Relax</p>
+                            <p class="text-gray-400 text-sm">Playlist made by: nina_stack01</p>
+                        </div>
+                    </div>
+                    <p class="text-green-400 text-sm mt-1">@nina_stack01 YES</p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Summie J <span class="text-gray-500 text-sm">4h ago</span></p>
+                    <p class="text-sm text-gray-400">I am the biggest Kurt Cobain fan but this will do <span class="text-green-400">@lela</span> sent me this song. grunge! nostalgia</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+                        <div>
+                            <p class="font-bold">1979</p>
+                            <p class="text-gray-400 text-sm">Smashing Pumpkins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <h1 class="text-lg font-bold border-b-2 border-green-400">Your feed</h1>
+            <h1 class="text-lg font-bold">Activity</h1>
+            <button class="text-green-400 text-xl">+</button>
+        </div>
+        
+        <!-- Feed -->
+        <div class="mt-4 space-y-4">
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">bribri <span class="text-gray-500 text-sm">10m ago</span></p>
+                    <p class="text-sm text-gray-400">stressed</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+                        <div>
+                            <p class="font-bold">What Could Possibly Go Wrong</p>
+                            <p class="text-gray-400 text-sm">Dominic Fike</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Nina Stack <span class="text-gray-500 text-sm">42m ago</span></p>
+                    <p class="text-sm text-gray-400">i love this :)</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Playlist Cover">
+                        <div>
+                            <p class="font-bold">Relax</p>
+                            <p class="text-gray-400 text-sm">Playlist made by: nina_stack01</p>
+                        </div>
+                    </div>
+                    <p class="text-green-400 text-sm mt-1">@nina_stack01 YES</p>
+                </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+                <img src="https://via.placeholder.com/50" class="rounded-full" alt="User Image">
+                <div class="flex-1">
+                    <p class="font-bold">Summie J <span class="text-gray-500 text-sm">4h ago</span></p>
+                    <p class="text-sm text-gray-400">I am the biggest Kurt Cobain fan but this will do <span class="text-green-400">@lela</span> sent me this song. grunge! nostalgia</p>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <img src="https://via.placeholder.com/50" class="rounded" alt="Album Cover">
+                        <div>
+                            <p class="font-bold">1979</p>
+                            <p class="text-gray-400 text-sm">Smashing Pumpkins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Favorites Section -->
+        <div class="mt-6">
+            <h2 class="text-lg font-bold border-b-2 border-green-400">Favorites</h2>
+            <div class="mt-4">
+                <h3 class="font-bold">Current Favorite Artists</h3>
+                <div class="flex space-x-2 mt-2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist 1">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist 2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Artist 3">
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3 class="font-bold">Current Favorite Songs</h3>
+                <div class="flex space-x-2 mt-2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Song 1">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Song 2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Song 3">
+                </div>
+            </div>
+            <div class="mt-4">
+                <h3 class="font-bold">Current Favorite Playlists</h3>
+                <div class="flex space-x-2 mt-2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Playlist 1">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Playlist 2">
+                    <img src="https://via.placeholder.com/50" class="rounded" alt="Playlist 3">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <button class="text-white text-xl">&larr;</button>
+            <h1 class="text-lg font-bold">Edit Profile Page</h1>
+            <button class="text-green-400 text-xl">Save</button>
+        </div>
+        
+        <!-- Profile Section -->
+        <div class="mt-4 text-center">
+            <img src="https://via.placeholder.com/100" class="rounded-full mx-auto" alt="Profile Picture">
+            <p class="text-green-400 mt-2">Change Profile Photo</p>
+        </div>
+
+        <!-- Edit Fields -->
+        <div class="mt-6 space-y-4">
+            <div>
+                <p class="text-gray-400">Display Name</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="Maddie Jackson">
+            </div>
+            <div>
+                <p class="text-gray-400">Username</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="madskyej">
+            </div>
+            <div>
+                <p class="text-gray-400">Bio</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="sf - slo <3 bienvenue">
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Artists</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Songs</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Playlists</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+    <div class="max-w-sm mx-auto">
+        <!-- Header -->
+        <div class="flex items-center justify-between">
+            <button class="text-white text-xl">&larr;</button>
+            <h1 class="text-lg font-bold">Edit Profile Page</h1>
+            <button class="text-green-400 text-xl">Save</button>
+        </div>
+        
+        <!-- Profile Section -->
+        <div class="mt-4 text-center">
+            <img src="https://via.placeholder.com/100" class="rounded-full mx-auto" alt="Profile Picture">
+            <p class="text-green-400 mt-2">Change Profile Photo</p>
+        </div>
+
+        <!-- Edit Fields -->
+        <div class="mt-6 space-y-4">
+            <div>
+                <p class="text-gray-400">Display Name</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="Maddie Jackson">
+            </div>
+            <div>
+                <p class="text-gray-400">Username</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="madskyej">
+            </div>
+            <div>
+                <p class="text-gray-400">Bio</p>
+                <input type="text" class="bg-black text-white w-full border-b border-gray-500 focus:outline-none" value="sf - slo <3 bienvenue">
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Artists</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Songs</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+            <div class="flex items-center justify-between">
+                <p class="text-white">Favorite Playlists</p>
+                <button class="text-gray-400">&gt;</button>
+            </div>
+        </div>
+        
+        <!-- Bottom Music Bar -->
+        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-4 flex items-center justify-between">
+            <span>Come a Little Closer</span>
+            <button class="bg-gray-700 p-2 rounded">▶</button>
+        </div>
+    </div>
+</body>
+</html>
